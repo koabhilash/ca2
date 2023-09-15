@@ -1,0 +1,20 @@
+a = int(input("ENTER NUMBER-1: "))
+b = int(input("ENTER NUMBER-2: "))
+
+print("1-ADDITION 2-SUBTRACTION 3-MULTIPLICATION 4-DIVISION")
+choice = int(input("Enter Your Choice: "))
+operations = [a + b, a - b, a * b, a / b]
+
+if 1 <= choice <= 4:
+    if choice == 4 and b == 0:
+        print("Denominator can't be Zero")
+    else:
+        print(f"Performing {operations[choice - 1]}...")
+        print("Result:", operations[choice - 1])
+else:
+    print("Enter Correct Input")
+
+counter = 2
+ins = int(input("Enter the No. of instructions: "))
+performance_measure = ins / counter
+print("Performance measure is:", performance_measure)
